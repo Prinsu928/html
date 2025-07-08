@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FIT Food - Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            border: 3px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 0;
+        }
+
+        .price-list {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .price-list table {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .price-list th, .price-list td {
+            padding: 8px 16px;
+            font-size: 16px;
+        }
+
+        .form-section {
+            background-color: #aafee0;
+            padding: 10px;
+            width: 300px;
+            margin: 0 auto 30px;
+            text-align: left;
+        }
+
+        .form-section label {
+            display: inline-block;
+            width: 100px;
+        }
+
+        .order-table {
+            margin: 0 auto 30px;
+        }
+
+        .order-table th, .order-table td {
+            padding: 8px 12px;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>==========Price list==========</h1>
+
+    <div class="price-list">
+        <table>
+            <tr>
+                <th>Food Item</th>
+                <th>Price(Rs.)</th>
+            </tr>
+            <tr><td>Chicken pizza</td><td>700.00</td></tr>
+            <tr><td>Vegetable Pizza</td><td>500.00</td></tr>
+            <tr><td>Chicken Kottu</td><td>300.00</td></tr>
+            <tr><td>Vegetable Kottu</td><td>200.00</td></tr>
+            <tr><td>Water Bottle</td><td>70.00</td></tr>
+        </table>
+    </div>
+
+    <h1><b>FIT Food - Order Form</b></h1>
+
+    <div class="form-section">
+        <label>Branch :</label>
+        <select>
+            <option>--Select Item--</option>
+            <option>Jaipur</option>
+            <option>Vaishali</option>
+            <option>Jhotwara</option>
+            <option>Raja park</option>
+            <option>Kalwar</option>
+        </select><br><br>
+
+        <label>User Name:</label>
+        <input type="text" placeholder="Enter your name"><br><br>
+
+        <label>Mobile:</label>
+        <input type="text" placeholder="00000 00000"><br>
+    </div>
+
+    <table class="order-table" border="0">
+        <tr>
+            <th>Food Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>
+                <select>
+                    <option>Chicken pizza</option>
+                    <option>Vegetable Pizza</option>
+                    <option>Chicken Kottu</option>
+                    <option>Vegetable Kottu</option>
+                    <option>Water Bottle</option>
+                </select>
+            </td>
+            <td><input type="number" placeholder="0"></td>
+            <td>700</td>
+        </tr>
+        <tr>
+            <td>
+                <select>
+                    <option>Chicken pizza</option>
+                    <option>Vegetable Pizza</option>
+                    <option>Chicken Kottu</option>
+                    <option>Vegetable Kottu</option>
+                    <option>Water Bottle</option>
+                </select>
+            </td>
+            <td><input type="number" placeholder="0"></td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>
+                <select>
+                    <option>Chicken pizza</option>
+                    <option>Vegetable Pizza</option>
+                    <option>Chicken Kottu</option>
+                    <option>Vegetable Kottu</option>
+                    <option>Water Bottle</option>
+                </select>
+            </td>
+            <td><input type="number" placeholder="0"></td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>
+                <select>
+                    <option>Chicken pizza</option>
+                    <option>Vegetable Pizza</option>
+                    <option>Chicken Kottu</option>
+                    <option>Vegetable Kottu</option>
+                    <option>Water Bottle</option>
+                </select>
+            </td>
+            <td><input type="number" placeholder="0"></td>
+            <td>200</td>
+        </tr>
+    </table>
+
+    <button class="btn">Create Bill</button>
+    <button class="btn">Clear</button>
+
+</body>
+</html>
